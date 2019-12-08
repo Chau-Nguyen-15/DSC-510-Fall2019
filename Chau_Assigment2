@@ -1,0 +1,23 @@
+'''
+Week 2 Assignment: Variables and Math Operations
+Objectives: Learning Variables, Operation, and Retrieving User Data
+Name: Chau Nguyen
+'''
+
+welcome_message = "Happy to do business with you. How can we help?"
+
+print(welcome_message)
+user_company = input('What company are you acquiring about?') #Ask user to input company name
+print("You work for " + user_company)
+
+fiber_needed = input('How many feet of fiber optical cable you are looking to install?' ) #Ask user to input number of feet needed
+fiber = float(fiber_needed)
+cost = fiber * .87
+
+final_cost = round(cost,2) #Round number to 2 decimal for dollar value
+
+receipt = "t394343"
+print(f'Receipt\n' 
+      f'Thank you {user_company} for your inquiry of {fiber_needed} feet of fiber optical cable.\n' #\n is for line break
+      f'Your total cost is ${final_cost} \n' #f' is formatted string literals; skip string identification
+      f'Your receipt number is {receipt}')
